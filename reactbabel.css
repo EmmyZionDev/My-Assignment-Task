@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header_wrapper {
+  display: flex;
+  width: 85vw;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: blue;
+  padding-left: 15px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+nav ul li {
+  list-style: none;
+ 
+} & a{
+ text-decoration: none;
+}
+
+.button_wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: gray;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+
+section {
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  margin-top: 30px;
+}
+
+.section_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100%;
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+              rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px,
+              rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.section_wrapper input {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.section_wrapper textarea {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.section_wrapper .quote_btn {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.section_wrapper .quote_btn:hover {
+  background-color: green;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+              rgba(0, 0, 0, 0.09) 0px 4px 2px,
+              rgba(0, 0, 0, 0.09) 0px 8px 4px,
+              rgba(0, 0, 0, 0.09) 0px 16px 8px,
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.post_card {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.post_card_wrapper {
+  display: flex;
+   overflow-y: scroll;
+  justify-content: flex-start;
+  width: 80vw;
+  gap: 10px; 
+  padding: 10px;
+   flex-wrap: wrap;
+   height: 100%;
+ 
+}
+
+.Card {
+  flex: 0 0 auto; 
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  background: white;
+}
+.prof_del_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prof_del_btn p {
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.delete_btn {
+  border-radius: 50%;
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.delete_btn:hover {
+  background-color: red;
+}
+
+.contents {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+}
+
+h4 {
+  margin-top: 10px;
+}

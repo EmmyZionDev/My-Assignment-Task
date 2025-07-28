@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Register Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="formUIhid.css">
+  
+</head>
+<body>
+
+  <div class="container">
+    <!-- Hidden radios -->
+    <input type="radio" name="tab" id="login" checked>
+    <input type="radio" name="tab" id="register" >
+
+    <!-- Toggle tabs -->
+    <div class="tabs">
+      <label for="login">Login</label>
+      <label for="register">Register</label>
+    </div>
+
+    <!-- Forms -->
+    <div class="form-container">
+      <!-- Login Form -->
+      <form class="login-form">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your Email" id="Email">
+
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" id="PassWord">
+
+        <button onclick="login()" class="btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+
+        <p class="social-text">Or continue with</p>
+        <div class="social-icons">
+            <a href="mailto:emmyzion76@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+             <a href="https://www.facebook.com/share/1AvgkSqTr7/"><i class="fab fa-facebook-f"></i></a> 
+           <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEmmyzion_%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExQU15bEg5eUFFMng2eHNKaQEeiersY5Y_WnuJqth1mUcf-GxWtQqCB-aIdpB-DjMmdVRqumnVvMhxkFGBr80_aem_XL-mqfYcVhvUolarXPRxzw&h=AT075WcKGn5GqQp-2gcKzPqGOalDiyJQpajMkOOdaWNN-hGlKIKTSikv9acMSOnIPsXAtZSsVCLY7bMgk5tUtsqf98mjd4JQvdSiaXvn8xfod8oIPbQt6UEEFCOhyxjYmwKN"><i class="fab fa-twitter"></i></a>
+        </div>
+      </form>
+
+      <!-- Register Form -->
+      <form class="register-form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your Full Name" id="FullName">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your Email" id="Emails">
+
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" id="PassWords">
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="••••••••" id="C_PassWord">
+
+        <button onclick="Register()" class="btn"><i class="fas fa-user-plus"></i> Register</button>
+
+        <p class="social-text">Or sign up with</p>
+        <div class="social-icons">
+            <a href="mailto:emmyzion76@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+             <a href="https://www.facebook.com/share/1AvgkSqTr7/"><i class="fab fa-facebook-f"></i></a> 
+           <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEmmyzion_%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExQU15bEg5eUFFMng2eHNKaQEeiersY5Y_WnuJqth1mUcf-GxWtQqCB-aIdpB-DjMmdVRqumnVvMhxkFGBr80_aem_XL-mqfYcVhvUolarXPRxzw&h=AT075WcKGn5GqQp-2gcKzPqGOalDiyJQpajMkOOdaWNN-hGlKIKTSikv9acMSOnIPsXAtZSsVCLY7bMgk5tUtsqf98mjd4JQvdSiaXvn8xfod8oIPbQt6UEEFCOhyxjYmwKN"><i class="fab fa-twitter"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./My Js Files/formUIhid.js"></script>
+</body>
+</html>

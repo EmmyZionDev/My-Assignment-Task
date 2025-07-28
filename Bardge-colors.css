@@ -1,0 +1,116 @@
+*{
+   box-sizing: border-box;
+    font-weight: bold;  
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff00;
+
+}
+main{
+   width: 50vw; 
+   height: 70vh ;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color:#ffff00;
+   align-items: center;
+   border-radius: 30px;
+   box-shadow: 24px 25px 60px #7d7d00
+   
+
+
+}
+nav{
+  
+     width: 40vw;
+     height: 10vh;
+     display: flex;
+     justify-content: space-between;
+  
+    
+}
+section{
+     background-color: brown;
+     width: 20vw;
+     height: 35vh;
+     display: flex;
+     border-radius: 300px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 24px 25px 60px #7d7d00;
+     font-size: 30px;
+
+   
+
+}
+input{
+  width: 40%;
+  border-radius: 30px;
+  border: none;
+   box-shadow: 24px 25px 60px #7d7d00;
+   text-align: center;
+}
+input:hover{
+    background-color: #7d7d00;;
+    cursor: pointer;
+      transform: scale(1.1);
+      color: white;
+
+    }
+
+.rest-btn{
+   border-radius: 30px;
+   cursor: pointer;
+    width: 20%;
+   background-color: green;
+   border: none;
+    box-shadow: 24px 25px 60px #7d7d00;
+    color: white;
+     
+}
+.rest-btn:hover{
+    background-color: rgb(109, 177, 7);
+    cursor: pointer;
+      transform: scale(1.1);
+}
+.gen-btn{
+ border-radius: 30px;
+  cursor: pointer;
+  width: 20%;
+  border: none;
+   box-shadow: 24px 25px 60px #7d7d00;
+  background: #3653f8;
+   color: white;
+
+
+}
+.gen-btn:hover{
+    background-color: blue;
+    cursor: pointer;
+    transform: scale(1.1);
+   
+}
+footer{
+    background-color: aliceblue;
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+     box-shadow: 24px 25px 60px #7d7d00;
+     font-size: 20px;
+}

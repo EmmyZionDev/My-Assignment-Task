@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    button {
+      padding: 20px;
+      font-size: 30px;
+      border: none;
+      border-radius: 100px;
+      margin-top: 60px;
+      width: 100px;
+      background-color: red;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="./Myworkpic/bulbOff.gif" width="300" id="bulb" alt="bulb">
+    <button id="btn">OFF</button>
+  </div>
+
+  <script>
+    let bulb = document.getElementById("bulb");
+    let button = document.getElementById("btn");
+    let isOn = false; 
+
+    button.addEventListener("click", () => {
+      isOn = !isOn;
+
+      if (isOn) {
+        bulb.src = "./Myworkpic/bulbOn.gif";
+        button.textContent = "OFF";
+        button.style.background = "RED";
+      } else {
+        bulb.src = "./Myworkpic/bulbOff.gif";
+        button.textContent = "ON";
+        button.style.background = "GREEN";
+      }
+    });
+  </script>
+</body>
+</html>

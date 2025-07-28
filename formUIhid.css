@@ -1,0 +1,101 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #e0e5ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 320px;
+      background: #e0e5ec;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tabs label {
+      width: 50%;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      background: #e0e5ec;
+      box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+   
+    form {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    #login:checked ~ .form-container .login-form,
+    #register:checked ~ .form-container .register-form {
+      display: flex;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background: #e0e5ec;
+      box-shadow: inset 2px 2px 4px #bebebe, inset -2px -2px 4px #ffffff;
+    }
+
+    .btn {
+      padding: 10px;
+      background: #e0e5ec;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn i {
+      margin-right: 5px;
+    }
+
+    .social-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .social-icons i {
+      background: #e0e5ec;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+      cursor: pointer;
+    }

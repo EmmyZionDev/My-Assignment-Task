@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb Control</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url(./Myworkpic/tree.jpg);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    .bulb {
+      width: 100%;
+      max-width: 300px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .bulb img {
+      width: 100%;
+      max-width: 200px; 
+      height: auto;
+      transition: transform 0.3s ease; 
+    }
+
+    .bulb img:hover {
+      transform: scale(1.05);
+    }
+
+    #text {
+      font-size: 2rem; 
+      font-weight: 700;
+      text-align: center;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: black ;
+      border-radius: 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .btn button {
+      width: 100px;
+      height: 45px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px; 
+      cursor: pointer;
+      transition: 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #yes {
+      background: #28a745; 
+      color: #fff;
+    }
+
+    #yes:hover {
+      background: #218838;
+      transform: translateY(-2px);
+    }
+
+    #no {
+      background: #dc3545; 
+      color: #fff;
+    }
+
+    #no:hover {
+      background: #c82333;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 600px) {
+      .bulb {
+        max-width: 250px;
+      }
+
+      .bulb img {
+        max-width: 150px;
+      }
+
+      #text {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+      }
+
+      .btn button {
+        width: 80px;
+        height: 40px;
+        font-size: 0.9rem;
+      } 
+    }
+  </style>
+</head>
+<body>
+  <div class="bulb">
+    <img src="./Myworkpic/bulbOff.gif" alt="Bulb" id="bulb">
+    <h1 id="text"></h1>
+  </div>
+  <div class="btn">
+    <button id="yes">ON</button>
+    <button id="no">OFF</button>
+  </div>
+  <audio id="clicksound" src="./Myworkpic/alarm1.wav"></audio>
+  <audio id="clicksound2" src="./Myworkpic/alarm2.wav"></audio>
+
+  <script>
+    const on = document.getElementById('yes');
+    const off = document.getElementById('no');
+    const bulb = document.getElementById('bulb');
+    const sound = document.getElementById("clicksound");
+    const secondSound = document.getElementById("clicksound2");
+    const text = document.getElementById("text");
+
+    on.addEventListener('click', () => {
+      bulb.src = "./Myworkpic/bulbOn.gif";
+      text.textContent = "Power Restored";
+      text.classList.remove('hidden');
+      sound.play();
+       sound.currentTime = 0; 
+    });
+
+    off.addEventListener('click', () => {
+      bulb.src = "./Myworkpic/bulbOff.gif";
+      text.textContent = "Power Interupted";
+      secondSound.play()
+      sound.pause()
+      sound.currentTime = 0; 
+    });
+  </script>
+</body>
+</html>

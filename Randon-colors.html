@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      body{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+      
+      }
+      main{
+         flex-direction: column;
+        display: flex;
+        align-content: center;
+      
+     
+      }
+      .sub{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+       
+
+      }
+      .second-sub{
+             display: flex;
+             height: 25vh;
+             width: 15vw;
+             border-radius: 200px;
+             background-color: brown;
+             justify-content: center;
+            align-items: center;
+      }
+
+    </style>
+</head>
+<body> 
+  <main>
+           <div class="sub">
+               <input type="text"   placeholder="User Name" id="userName">
+               <button onclick="create()">create</button>
+           </div>
+           <div class="second-sub" id="Profile"></div>
+  </main>
+  <script src="./My Js Files/RandomColors.js"></script>
+</body>
+</html>
